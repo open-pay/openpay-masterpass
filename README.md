@@ -33,7 +33,7 @@ Add openpay-masterpass.js
 
 ```html
 <div class="MasterPassBtnExample">
-			<a href="#"> <img src="https://www.mastercard.com/mc_us/wallet/img/en/US/mcpp_wllt_btn_chk_180x042px.png"></a>
+	<a href="#"> <img src="https://www.mastercard.com/mc_us/wallet/img/en/US/mcpp_wllt_btn_chk_180x042px.png"></a>
 </div>
 ```
 ```js
@@ -65,7 +65,7 @@ OpenpayMasterpass.configureButton(".MasterPassBtnExample a", {
 });
 ```
 
-##  Your successConfigurationButtonCallback
+##  Your SuccessConfigurationButtonCallback
 ```js
 var successConfigureButtonCallback = function(response) {
   OpenpayMasterpass.getCheckoutData(
@@ -76,9 +76,9 @@ var successConfigureButtonCallback = function(response) {
 };
 ```
 
-##  Your successConfigurationButtonCallback
+##  Your SuccessCheckoutCallback
 ```js
-  var successGetCheckoutCallback = function(response) {
+  var successCheckoutCallback = function(response) {
   var data = response.data;
   console.log('DATA:');
   console.log(data);
